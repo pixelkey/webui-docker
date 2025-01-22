@@ -1,5 +1,5 @@
-localhost, 127.0.0.1 {
-    reverse_proxy localhost:8080
+localhost {
+    reverse_proxy webui:8080
     tls internal {
         on_demand
     }

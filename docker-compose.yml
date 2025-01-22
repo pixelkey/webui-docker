@@ -2,9 +2,10 @@ services:
   webui:
     image: ghcr.io/open-webui/open-webui:main
     container_name: open-webui
-    network_mode: host
+    ports:
+      - "3000:8080"
     volumes:
-      - ./data:/app/backend/data
+      - open-webui:/app/backend/data
     environment:
       - OLLAMA_BASE_URL=http://localhost:11434
     restart: unless-stopped
@@ -13,7 +14,9 @@ services:
     image: caddy:2-alpine
     container_name: caddy
     restart: unless-stopped
-    network_mode: host
+    ports:
+      - "80:80"
+      - "443:443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
