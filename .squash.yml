@@ -2,7 +2,9 @@ deployments:
   open-webui:
     filename: ./docker-compose.squash.yml
     context_path: .
-    allow_private_ports: 3000
+    allow_private_ports: 8080
+    ready_wait: 1800
+    backend_wait: 300
     environment:
       - DOMAIN=$SQUASH_DOMAIN
       - ENV=dev
