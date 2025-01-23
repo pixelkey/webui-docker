@@ -1,6 +1,6 @@
 deployments:
   open-webui:
-    filename: docker-compose.squash.yml
+    filename: ./docker-compose.squash.yml
     context_path: .
     allow_private_ports: 3000
     environment:
