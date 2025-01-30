@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Open WebUI
+Comment=Open source ChatGPT-Style Web UI for Ollama
+Exec=gnome-terminal --wait -- /home/andrew/projects/app/docker/open-webui/start.sh
+Icon=/home/andrew/projects/app/docker/open-webui/open-webui.svg
+Terminal=false
+Categories=Development;AI;
+Keywords=AI;Chat;Ollama;

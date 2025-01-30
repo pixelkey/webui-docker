@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Stop Open WebUI
+Comment=Stop Open WebUI Docker containers
+Exec=gnome-terminal --wait -- /home/andrew/projects/app/docker/open-webui/stop.sh
+Icon=/home/andrew/projects/app/docker/open-webui/open-webui-stop.svg
+Terminal=false
+Categories=Development;AI;
+Keywords=AI;Chat;Ollama;Stop;
